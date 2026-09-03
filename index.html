@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ayush Kumar | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="profile_name">Ayush Kumar</div>
+
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Project Details</a>
+        <a href="#skills">Skills</a>
+        <a href="#recommendations">Recommendations</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section id="home" class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+          <h1>Hi, I'm <span>Ayush Kumar</span></h1>
+
+          <h2>Web Developer &amp; Learner</h2>
+
+          <p>
+            I build clean, responsive and user-friendly web experiences using
+            modern web technologies.
+          </p>
+
+          <a class="btn" href="#about"> Explore My Profile </a>
+        </div>
+
+        <!-- Profile Image -->
+        <div class="avatar">
+          <img src="images/ayush-profile.png" alt="Ayush Kumar Profile" />
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="section">
+        <div class="section-heading">
+          <span>01</span>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-card">
+          <h3>Hello! I'm Ayush Kumar.</h3>
+
+          <p>
+            I am a passionate web development learner who enjoys turning ideas
+            into practical and interactive websites. I am currently
+            strengthening my skills in HTML, CSS, JavaScript, Java and React.
+          </p>
+
+          <p>
+            I like solving problems, learning new technologies and creating
+            projects that are simple, useful and easy to use.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section alt">
+        <div class="section-heading">
+          <span>02</span>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <img src="images/html.png" alt="HTML5 Logo" />
+            <h3>HTML5</h3>
+            <p>Semantic structure</p>
+          </div>
+
+          <div class="skill">
+            <img src="images/css.png" alt="CSS3 Logo" />
+            <h3>CSS3</h3>
+            <p>Responsive styling</p>
+          </div>
+
+          <div class="skill">
+            <img src="images/javascript.png" alt="JavaScript Logo" />
+            <h3>JavaScript</h3>
+            <p>Interactive web logic</p>
+          </div>
+
+          <div class="skill">
+            <img src="images/java.png" alt="Java Logo" />
+            <h3>Java</h3>
+            <p>Object-oriented programming</p>
+          </div>
+
+          <div class="skill">
+            <img src="images/react.png" alt="React Logo" />
+            <h3>React</h3>
+            <p>Frontend development</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="section-heading">
+          <span>03</span>
+          <h2>Project Details</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <span class="project-number">01</span>
+
+            <h3>Portfolio Website</h3>
+
+            <p>
+              A responsive single-page portfolio built with HTML5, CSS3 and
+              JavaScript.
+            </p>
+
+            <span class="tag">HTML • CSS • JS</span>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">02</span>
+
+            <h3>Recommendation System</h3>
+
+            <p>
+              An interactive section where users can submit and view
+              recommendations dynamically.
+            </p>
+
+            <span class="tag">JavaScript • DOM</span>
+          </article>
+
+          <article class="project-card">
+            <span class="project-number">03</span>
+
+            <h3>Chatbot Interface</h3>
+
+            <p>
+              A conversational web interface inspired by modern AI chat
+              applications.
+            </p>
+
+            <span class="tag">Web Development</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Recommendations -->
+      <section id="recommendations" class="section alt">
+        <div class="section-heading">
+          <span>04</span>
+          <h2>Recommendations</h2>
+        </div>
+
+        <div id="recommendationList" class="recommendation-list">
+          <div class="recommendation">
+            <div class="quote">“</div>
+
+            <p>
+              Ayush is a dedicated learner who consistently improves his
+              technical skills.
+            </p>
+
+            <strong>— Project Mentor</strong>
+          </div>
+
+          <div class="recommendation">
+            <div class="quote">“</div>
+
+            <p>
+              He approaches web development tasks with curiosity and a
+              problem-solving mindset.
+            </p>
+
+            <strong>— Team Member</strong>
+          </div>
+        </div>
+
+        <!-- Recommendation Form -->
+        <form id="recommendationForm" class="recommendation-form">
+          <h3>Add a Recommendation</h3>
+
+          <textarea
+            id="recommendationInput"
+            placeholder="Write your recommendation..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btn">Submit Recommendation</button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Home Button -->
+    <button
+      id="homeButton"
+      class="home-button"
+      aria-label="Go to Home"
+      title="Home"
+    >
+      ⌂
+    </button>
+
+    <!-- Popup -->
+    <div id="popup" class="popup" role="status">
+      Thank you for leaving a recommendation!
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
